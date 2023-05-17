@@ -1,0 +1,52 @@
+[
+    {
+      "username": "Moff Gideon",
+      "email": "moffg@techfriends.dev",
+      "password": "password01"
+    },
+    {
+      "username": "Pikachu",
+      "email": "zapzap@techfriends.dev",
+      "password": "password02"
+    },
+    {
+      "username": "Stormtrooper",
+      "email": "nevermiss@techfriends.dev",
+      "password": "password03"
+    },
+    {
+      "username": "Kent Kaniff",
+      "email": "therealslimshady@techfriends.dev",
+      "password": "password04"
+    },
+    {
+      "username": "Edward Scissorhands",
+      "email": "edwardsnip@techfriends.dev",
+      "password": "password05"
+    },
+    {
+      "username": "Sean John",
+      "email": "therock@techfriends.dev",
+      "password": "password06"
+    },
+    {
+      "username": "Ash Ketchum",
+      "email": "gottagetemall@techfriends.dev",
+      "password": "password07"
+    },
+    {
+      "username": "Greg Jones",
+      "email": "monolaser@techfriends.dev",
+      "password": "password08"
+    },
+    {
+      "username": "Ronald Ronaldson",
+      "email": "ronnieron@techfriends.dev",
+      "password": "password09"
+    },
+    {
+      "username": "Lernantino",
+      "email": "lernantino@techfriends.dev",
+      "password": "password10"
+    }
+  ]
