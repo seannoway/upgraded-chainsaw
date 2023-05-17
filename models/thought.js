@@ -1,4 +1,5 @@
-const { Schema, model, Types } = require('mongoose');
+const { Schema, model } = require('mongoose');
+const Reaction = require('./reaction.js');
 
 const thoughtSchema = new Schema(
     {
@@ -20,48 +21,13 @@ const thoughtSchema = new Schema(
             required: true,
         },
         reactions: [
-            {
-                type: Schema.Types.ObjectId,
-                ref: 'Reaction',
-            },
+           Reaction
         ],
     },
     {
         toJSON: {
             virtuals: true,
             getters: true,
-        },
-        id: false,
-    }
-);
-
-const ReactionSchema = new Schema(
-    {
-        reactionId: {
-            type: Schema.Types.ObjectId,
-            default: () => new Types.ObjectId(),
-        },
-        reactionBody: {
-            type: String,
-            required: true,
-            maxlength: 280,
-        },
-        username: {
-            type: String,
-            required: true,
-        },
-        createdAt: {
-            type: Date,
-            default: Date.now(),
-            get: (milly) => {
-                return new Date(milly).toLocaleTimeString()
-            },
-        },
-    },
-    {
-        toJSON: {
-            getters: true,
-            virtuals: true,
         },
         id: false,
     }
@@ -74,9 +40,8 @@ thoughtSchema.virtual('reactionCount').get(function () {
 );
 
 const Thought = model('Thought', thoughtSchema);
-const Reaction = model('Reaction', ReactionSchema);
 
 module.exports = Thought;
-module.exports = Reaction;
+
 
      

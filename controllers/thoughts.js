@@ -3,7 +3,7 @@ const { Thought, User } = require('../models');
 const thoughtController = {
     async getAllThoughts(req, res) {
         try {
-            const dbThoughtData = await Thought.find({}).populate('reactions').populate('thoughts');
+            const dbThoughtData = await Thought.find({})
             res.json(dbThoughtData);
         }
         catch (err) {

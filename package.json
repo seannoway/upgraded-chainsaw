@@ -4,7 +4,10 @@
   "description": "social media assignment",
   "main": "server.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "node server.js",
+    "dev": "nodemon index",
+    "seed": "node utils/seed"
   },
   "author": "sean holian",
   "license": "ISC",
