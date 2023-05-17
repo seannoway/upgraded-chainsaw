@@ -1,0 +1,14 @@
+{
+  "name": "module-18",
+  "version": "1.0.0",
+  "description": "social media assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "sean holian",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^7.1.1"
+  }
+}
